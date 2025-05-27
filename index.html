@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Willy Gonzaga - Desenvolvedor Frontend em formação, apaixonado por criar experiências digitais">
     <title>Willy Gonzaga Baleiro - Desenvolvedor Iniciante Frontend</title>
 
     <link 
@@ -15,7 +16,7 @@
 
     <link
         rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
  
     <link
@@ -24,173 +25,346 @@
     />
 
     <link rel="stylesheet" href="./src/css/reset.css">
-
     <link rel="stylesheet" href="./src/css/estilos.css">
-
     <link rel="stylesheet" href="./src/css/responsivo.css">
-
 </head>
 
 <body>
     <header class="cabecalho">
-        <a href="#">
-            <h1 class="logo">WG</h1>
+        <a href="#home">
+            <div class="logo">WG</div>
         </a>
-
         <nav class="menu">
             <ul>
-                <li>
-                    <a href="#projetos">Meus projetos</a>
-                </li>
+                <li><a href="#sobre" class="menu-link">Sobre mim</a></li>
+                <li><a href="#habilidades" class="menu-link">Habilidades</a></li>
+                <li><a href="#projetos" class="menu-link">Meus projetos</a></li>
+                <li><a href="#contato" class="menu-link">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <section class="home">
+
+    <section class="home" id="home">
         <div class="informacoes">
-            <h1>Olá! Sou Willy Gonzaga</h1>
-            <p>Um desenvolvedor frontend em formação apaixonado por tecnologia</p>
+            <h1>Olá! Sou <span class="destaque">Willy Gonzaga</span></h1>
+            <p class="subtitulo">Um estudante em formação apaixonado por tecnologia</p>
             <p>Estou sempre me desafiando com novos projetos e buscando feedback na comunidade de programação, além de
-                compartilhar meus conhecimentos. 🤩💻</p>
-            <p>Ah, também sou fã de jogos, filmes, séries e futebol. 🧡⚽</p>
+                compartilhar meus conhecimentos. </p>
+            <p>Ah, também sou fã de jogos, filmes, séries, futebol e livros.</p>
+
+            <div class="botoes-cta">
+                <a href="#projetos" class="btn-cta primario">Ver Projetos</a>
+                <a href="#contato" class="btn-cta secundario">Fale Comigo</a>
+            </div>
 
             <ul class="redes-sociais">
                 <li>
                     <a href="https://www.linkedin.com/in/willy-gonzaga-881613251/" title="Ir para o Linkedin"
                         target="_blank" rel="noopener">
-                        <i class="fab fa-linkedin-in"></i
-                    >
+                        <i class="fab fa-linkedin-in"></i>
                     </a>
                 </li>
 
                 <li>
-                    <a href="https://wa.me/97981157727" title="Enviar mensagem no whatSapp" target="_blank" rel="noopener"
-                    >
+                    <a href="https://wa.me/5597981157727" title="Enviar mensagem no WhatsApp" target="_blank" rel="noopener">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </li>
 
                 <li>
                     <a href="https://github.com/Willygonzaga" title="Ir para o GitHub" target="_blank" rel="noopener">
-                        <i class="fab fa-github"></i
-                    >
+                        <i class="fab fa-github"></i>
                     </a>
                 </li>
 
                 <li>
                     <a href="https://www.instagram.com/willy.gonzaga/" title="Ir para o Instagram" target="_blank" rel="noopener">
-                        <i class="fab fa-instagram"></i
-                    >
+                        <i class="fab fa-instagram"></i>
                     </a>
                 </li>
             </ul>
         </div>
 
         <div class="container-foto">
-            <div class="foto  sombra-interna">
-                <img src="./src/imagens/imagem1.png" alt="Foto do portfólio do Willy">
+            <div class="foto sombra-interna">
+                <img src="./src/imagens/perfil.png" alt="Foto do portfólio do Willy">
             </div>
         </div>
     </section>
+
+    <!-- Nova seção Sobre -->
+    <section class="sobre" id="sobre">
+        <div class="container-sobre">
+            <h2 class="titulo-secao">Sobre Mim</h2>
+            
+            <div class="conteudo-sobre">
+                <p>
+                    Iniciei minha jornada na área de tecnologia a alguns anos, sempre tive a curiosidade em saber como funcionava os sites, aplicativos e jogos. Quando ingressei no curso de Sistemas de Informação comecei a ter noção de como esse mundo funcionava e a partir daí me apaixonei pela área. Desde então pude participar de vários projetos que me fezeram ter a familiaridade com áreas especificas. Hoje, possuo familiaridade e interesse nas áreas de desenvolvimento Web FrontEnd, Mobile, Inteligência Artificial, Visão Computacional e Ciência de Dados.
+                </p>
+                <p>
+                    Acredito que a tecnologia tem o poder de transformar ideias em realidade, e é 
+                    isso que me motiva todos os dias a aprender mais e me desenvolver como programador.
+                </p>
+
+                <div class="estatisticas">
+                    <div class="stat-item">
+                        <span class="numero">3+</span>
+                        <span class="texto">Anos de estudo</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="numero">2+</span>
+                        <span class="texto">Projetos Concluídos</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="numero">100%</span>
+                        <span class="texto">Dedicação</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades Section -->
+    <section class="habilidades" id="habilidades">
+        <h2 class="titulo-secao">Habilidades</h2>
+        <div class="grid-habilidades">
+            <div class="categoria-habilidade">
+                <h3><i class="fas fa-code"></i> Linguagens Familiares</h3>
+                <div class="lista-habilidades">
+                    <div class="habilidade">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML</span>
+                    </div>
+                    <div class="habilidade">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS</span>
+                    </div>
+                    <div class="habilidade">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="habilidade">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="habilidade c">
+                        <i class="fas fa-code"></i>
+                        <span>C</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categoria-habilidade">
+                <h3><i class="fas fa-tools"></i> Ferramentas</h3>
+                <div class="lista-habilidades">
+                    <div class="habilidade mongodb">
+                        <i class="fas fa-database"></i>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="habilidade git">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                    <div class="habilidade github">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </div>
+                    <div class="habilidade vscode">
+                        <i class="fas fa-code"></i>
+                        <span>VS Code</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categoria-habilidade">
+                <h3><i class="fas fa-mobile-alt"></i> Estudando - Mobile</h3>
+                <div class="lista-habilidades">
+                    <div class="habilidade flutter">
+                        <i class="fas fa-mobile"></i>
+                        <span>Flutter</span>
+                    </div>
+                    <div class="habilidade dart">
+                        <i class="fas fa-code"></i>
+                        <span>Dart</span>
+                    </div>
+                    <div class="habilidade kotlin">
+                        <i class="fab fa-android"></i>
+                        <span>Kotlin</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categoria-habilidade">
+                <h3><i class="fas fa-brain"></i> Estudando - IA</h3>
+                <div class="lista-habilidades">
+                    <div class="habilidade">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="projetos" id="projetos">
         <h2 class="titulo">Meus Projetos</h2>
+        <p class="subtitulo-projetos">Aqui estão alguns dos projetos que desenvolvi durante minha jornada de aprendizado</p>
 
         <div class="container-projetos">
+            <!-- 
+                🚨 ÁREA PARA ADICIONAR SEUS PROJETOS REAIS 🚨
+                
+                Substitua os projetos abaixo pelos seus projetos reais:
+                1. Altere os links href="#" pelos links dos seus repositórios
+                2. Substitue as imagens placeholder pelas screenshots dos seus projetos
+                3. Atualize os títulos e descrições
+                4. Ajuste as tecnologias usadas em cada projeto
+                
+                Mantenha a estrutura: <div class="projeto ativo"> para os primeiros 4 projetos
+                e <div class="projeto"> para os demais (que ficam ocultos inicialmente)
+            -->
+            
             <div class="projeto ativo">
-                <a href="https://github.com/devemdobro/projeto-gta" target="_blank" rel="noopener">
-                    <img src="https://via.placeholder.com/515X700" alt="projeto 1">
-                    <h3>Projeto 1</h3>
+                <a href="https://github.com/Willygonzaga/jogo-da-velha" target="_blank" rel="noopener">
+                    <img src="./src/imagens/jogo-da-velha.png" alt="Projeto 1">
+                    <h3>Jogo da Velha</h3>
 
                     <div class="informacoes-projeto">
-                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
-                        <p>Ver no GitHub Pages</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="projeto ativo">
-                <a href="https://github.com/devemdobro/projeto-gta" target="_blank" rel="noopener">
-                    <img src="https://via.placeholder.com/515X700" alt="projeto 2">
-                    <h3>Projeto 2</h3>
-
-                    <div class="informacoes-projeto">
-                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
-                        <p>Ver no GitHub Pages</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="projeto ativo">
-                <a href="https://github.com/devemdobro/projeto-gta" target="_blank" rel="noopener">
-                    <img src="https://via.placeholder.com/515X700" alt="projeto 3">
-                    <h3>Projeto 3</h3>
-
-                    <div class="informacoes-projeto">
-                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
-                        <p>Ver no GitHub Pages</p>
+                        <p>Jogo da velha entre o usuário e a máquina.</p>
+                        <p>🔧 Linguagem C</p>
+                        <p>👆 Clique para ver no GitHub</p>
                     </div>
                 </a>
             </div>
 
             <div class="projeto ativo">
-                <a href="https://github.com/devemdobro/projeto-gta" target="_blank" rel="noopener">
-                    <img src="https://via.placeholder.com/515X700" alt="projeto 4">
-                    <h3>Projeto 4</h3>
+                <a href="#" target="_blank" rel="noopener">
+                    <img src="https://via.placeholder.com/515x400/06b6d4/ffffff?text=Seu+Projeto+2" alt="Projeto 2">
+                    <h3>Nome do Seu Projeto 2</h3>
 
                     <div class="informacoes-projeto">
-                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
-                        <p>Ver no GitHub Pages</p>
+                        <p>Descrição do seu segundo projeto</p>
+                        <p>🔧 HTML, CSS</p>
+                        <p>👆 Clique para ver no GitHub</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="projeto ativo">
+                <a href="#" target="_blank" rel="noopener">
+                    <img src="https://via.placeholder.com/515x400/10b981/ffffff?text=Seu+Projeto+3" alt="Projeto 3">
+                    <h3>Nome do Seu Projeto 3</h3>
+
+                    <div class="informacoes-projeto">
+                        <p>Descrição do seu terceiro projeto</p>
+                        <p>🔧 HTML, CSS, JavaScript</p>
+                        <p>👆 Clique para ver no GitHub</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="projeto ativo">
+                <a href="#" target="_blank" rel="noopener">
+                    <img src="https://via.placeholder.com/515x400/f59e0b/ffffff?text=Seu+Projeto+4" alt="Projeto 4">
+                    <h3>Nome do Seu Projeto 4</h3>
+
+                    <div class="informacoes-projeto">
+                        <p>Descrição do seu quarto projeto</p>
+                        <p>🔧 HTML, CSS</p>
+                        <p>👆 Clique para ver no GitHub</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Projetos ocultos inicialmente -->
+            <div class="projeto">
+                <a href="#" target="_blank" rel="noopener">
+                    <img src="https://via.placeholder.com/515x400/8b5cf6/ffffff?text=Seu+Projeto+5" alt="Projeto 5">
+                    <h3>Nome do Seu Projeto 5</h3>
+                    <div class="informacoes-projeto">
+                        <p>Descrição do seu quinto projeto</p>
+                        <p>🔧 HTML, CSS, JavaScript</p>
+                        <p>👆 Clique para ver no GitHub</p>
                     </div>
                 </a>
             </div>
 
             <div class="projeto">
-                <a href="#" target="_blank">
-                    <img src="https://via.placeholder.com/515X700" alt="Projeto 5">
-                    <h3>Projeto 5</h3>
+                <a href="#" target="_blank" rel="noopener">
+                    <img src="https://via.placeholder.com/515x400/ef4444/ffffff?text=Seu+Projeto+6" alt="Projeto 6">
+                    <h3>Nome do Seu Projeto 6</h3>
                     <div class="informacoes-projeto">
-                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
-                        <p>Ver no GitHub Pages</p>
+                        <p>Descrição do seu sexto projeto</p>
+                        <p>🔧 HTML, CSS, JavaScript</p>
+                        <p>👆 Clique para ver no GitHub</p>
                     </div>
                 </a>
             </div>
 
-            <div class="projeto">
-                <a href="#" target="_blank">
-                    <img src="https://via.placeholder.com/515X700" alt="Projeto 6">
-                    <h3>Projeto 6</h3>
-                    <div class="informacoes-projeto">
-                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
-                        <p>Ver no GitHub Pages</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="projeto">
-                <a href="#" target="_blank">
-                    <img src="https://via.placeholder.com/515X700" alt="Projeto 7">
-                    <h3>Projeto 7</h3>
-                    <div class="informacoes-projeto">
-                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
-                        <p>Ver no GitHub Pages</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="projeto">
-                <a href="#" target="_blank">
-                    <img src="https://via.placeholder.com/515X700" alt="Projeto 8">
-                    <h3>Projeto 8</h3>
-                    <div class="informacoes-projeto">
-                        <p>Projeto feito usando HTML, CSS e JavaScript</p>
-                        <p>Ver no GitHub Pages</p>
-                    </div>
-                </a>
-            </div>
+            <!-- 
+                🚨 FIM DA ÁREA DE PROJETOS 🚨
+                
+                Para adicionar mais projetos, copie a estrutura acima e cole aqui.
+                Lembre-se de usar class="projeto" (sem "ativo") para projetos que 
+                devem aparecer apenas quando clicar em "Mostrar mais"
+            -->
         </div>
 
         <button class="btn-mostrar-projetos">Mostrar mais</button>
     </section>
 
-    <script src="./src/js/index.js"></script>
+    <!-- Nova seção Contato -->
+    <section class="contato" id="contato">
+        <h2 class="titulo-secao">Vamos Conversar?</h2>
+        <p class="subtitulo-contato">Estou sempre aberto a novas oportunidades e desafios</p>
+        
+        <div class="container-contato">
+            <div class="info-contato">
+                <div class="item-contato">
+                    <i class="fas fa-envelope"></i>
+                    <div class="info">
+                        <h4>Email</h4>
+                        <p>willygb70@gmail.com</p>
+                    </div>
+                </div>
 
+                <div class="item-contato">
+                    <i class="fab fa-whatsapp"></i>
+                    <div class="info">
+                        <h4>WhatsApp</h4>
+                        <p>(97) 98115-7727</p>
+                    </div>
+                </div>
+
+                <div class="item-contato">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="info">
+                        <h4>Localização</h4>
+                        <p>Itacoatiara, Amazonas</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="links-contato">
+                <a href="https://www.linkedin.com/in/willy-gonzaga-881613251/" class="link-social linkedin" target="_blank" rel="noopener">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span>LinkedIn</span>
+                </a>
+                
+                <a href="https://wa.me/5597981157727" class="link-social whatsapp" target="_blank" rel="noopener">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+                
+                <a href="https://github.com/Willygonzaga" class="link-social github" target="_blank" rel="noopener">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="./src/js/index.js"></script>
 </body>
+
+</html>
