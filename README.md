@@ -11,6 +11,6 @@ Ele está publicado no GitHub Pages e pode ser acessado neste link:
 - JavaScript
 
 ## 🗃️ Objetivo
-Mostrar meus principais projetos e habilidades como desenvolvedor.
+Mostrar meus principais projetos e habilidades como desenvolvedor e Pesquisador.
 
 ---
